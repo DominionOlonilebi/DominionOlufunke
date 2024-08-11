@@ -1,0 +1,35 @@
+import React from 'react'
+import projects from "./data/projects.json"
+
+const Project = () => {
+  return (
+    <section id='project'>
+       <div className='container project-container'>
+        <h5 className='text-center my-4'>Projects</h5>
+        <div className='row'>
+            {projects.map((data) => {
+                return (
+                    <>
+                    <div className='col-md-6'>
+                    <div className='row d-flex justify-content-center'>
+                        <div className='col-md-5'>
+                        <img src={data.imgSrc} alt='' className='img-fluid' />                        
+                        
+                        </div>
+                        <div className='col-md-5'>
+                        <h6 className='text-white'>{data.projectName} </h6>
+                        <p>{data.description} </p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    </>
+                )
+            })}
+        </div>
+        </div> 
+    </section>
+  )
+}
+
+export default Project

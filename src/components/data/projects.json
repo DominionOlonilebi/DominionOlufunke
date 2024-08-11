@@ -1,0 +1,51 @@
+[
+    {
+      "imgSrc": "Image/project11.JPG",
+      "category": "next js and tailwind CSS",
+      "projectName": "Powertools INC",
+      "description":
+        "It was my first live project. Challenging but i had a great experience. Powertools is a company that .....",
+      "link": "https://www.powertoolsintltd.com/"
+    },
+    {
+      "imgSrc": "Image/project8.JPG",
+      "category": "react js and bootstrap",
+      "projectName": "Weather App",
+      "description":
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nesciunt vel necessitatibus perferendis.",
+      "link": "https://weather-app-omega-jade.vercel.app/"
+    },
+    {
+      "imgSrc": "Image/project13.JPG",
+      "category": "Context API",
+      "projectName": "Calculator",
+      "description":
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nesciunt vel necessitatibus perferendis.",
+      "link": "https://calculator-app-phi-liart.vercel.app/"
+    },
+    {
+      "imgSrc": "Image/project12.JPG",
+      "category": "react js and bootstrap",
+      "projectName": "Foodi Website",
+      "description":
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nesciunt vel necessitatibus perferendis.",
+      "link": "https://foodii-website.vercel.app/"
+    },
+    {
+      "imgSrc": "Image/project10.JPG",
+      "category": "react js and bootstrap",
+      "projectName": "Dashboard",
+      "description":
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nesciunt vel necessitatibus perferendis.",
+      "link": "https://admin-dashboard-six-lilac.vercel.app/"
+    },
+  
+    {
+      "imgSrc": "Image/project9.JPG",
+      "category": "react js and bootstrap",
+      "projectName": "Shoe Store",
+      "description":
+        "An ecommerce website that filter products, add to cart and delete from cart. Lorem ipsum, dolor sit",
+      "link": "https://shop-bite-eta.vercel.app/"
+    }
+  ]

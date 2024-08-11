@@ -1,0 +1,191 @@
+:root {
+  --box-shadow: 5px 5px 10px 10px rgb(231, 0, 138);
+}
+* {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar */
+
+.navbars .navbars_brand{
+  color: #fff;
+  padding-top: 3%;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.navbars .navbars_brand:hover{
+  color: #e7008a;
+}
+.navs .linkss {
+  color: #fff;
+  padding-top: 3%;
+  font-size: 18px;
+}
+.navs .linkss:hover{
+  color: #e7008a;
+}
+.navs .linkss:checked{
+  color: #e7008a;
+}
+/* intro */
+.intro {
+  padding-top: 100px;
+  text-align: center;
+}
+.intro h3 {
+  color: #e7008a;
+  font-size: 33px;
+}
+.intro .imgs {
+  width: 120px;
+  border-radius: 100%;
+}
+
+.intro .btn-hire {
+  border-color: #e7008a;
+color: white;
+border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 6px 24px;
+  font-size: 14px;
+}
+.intro .btn-resume {
+  border-color: transparent;
+  background-color: #e7008a;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 6px 24px;
+  font-size: 14px;
+}
+
+.intro .mySwiper {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* About me */
+.abt{
+  margin-top: 30px;
+}
+.abt h5 {
+  margin-bottom: 60px;
+  color: #e7008a;
+}
+.abt .brand-name {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 10px;
+  border: 5px solid #e7008a;
+  animation-name: superman;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  color: #ffffff;
+}
+.abt .brand-name p{
+  color: #adadad;
+}
+@keyframes superman {
+  0% {
+    border-color: #535353;
+    transform: translate(0, 0px);
+    box-shadow: 4px 4px 10px 10px rgb(231, 0, 138);
+  }
+  25% {
+    border-color: #acacac;
+    box-shadow: 4px 4px 10px 10px #292929;
+  }
+  50% {
+    border-color: #292929;
+    transform: translate(0, 10px);
+    box-shadow: 4px 4px 10px 10px #e7008a;
+  }
+  75% {
+    border-color: #ffffff;
+    box-shadow: 4px 4px 10px 10px #292929;
+  }
+  100% {
+    border-color: #575757;
+    transform: translate(0, -10px);
+    box-shadow: 4px 4px 10px 10px #e7008a;
+
+  }
+}
+
+.abt .abt-card {
+  background-color: black;
+  border: 2px solid #272727;
+color: #c0c0c0;
+margin-left: -80px;
+padding-top: 30px;
+padding-bottom: 30px;
+margin-top: 25px;
+}
+.abt .abt-card p{
+  line-height: 30px;
+  font-size: 13px;
+}
+
+/* Experience */
+
+.exp-container .exp-title {
+  margin-top: 100px;
+  color: #e7008a;
+}
+.exp-container .exp-card {
+  background-color: black;
+  color: #9e9e9e;
+}
+.exp-container .exp-card h5 {
+  color: #d6d6d6;
+  font-size: 15px;
+}
+.exp-container .exp-card h6 {
+  font-size: 14px;
+  color:#888787;
+
+}
+.exp-container p{
+  color: #d4d4d4;
+  font-size: 13px;
+  line-height: 15px;
+}
+.exp-container h4{
+  color: #888787;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Project */
+
+.project-container h5{
+  color: #e7008a;
+}
+.project-container p{
+  font-size: 13px;
+  color: #888787;
+}
+
+/* Contact */
+.contact h5 {
+  color: #e7008a;
+  margin-top: 40px;
+}
+.contact p{
+  line-height: 15px;
+  font-size: 13px;
+}
+
+/* Footer */
+
+.footer-section h6{
+  color: #e7008a;
+  margin-top: -100px;
+}
+.footer-section p{
+  color: #fff;
+  font-size: 13px;
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "role": "Frontend Development Internship",
+        "company": "HNG",
+        "sDate": "July, 2024",
+        "eDate": "Present,",
+        "location": "Remote",
+        "exp": [
+            "Worked on ecommerce",
+            "Worked on Admin Users Page"
+        ]    
+    },
+    {
+        "id": 2,
+        "role": "Frontend Development Internship",
+        "company": "NochSolution",
+        "sDate": "Jan, 2024",
+        "eDate": "June, 2024",
+        "location": "Remote",
+        "exp": [
+            "Worked on ecommerce",
+            "Worked on Admin Users Page"
+        ]    
+    },
+    {
+        "id": 3,
+        "role": "Frontend Development Internship",
+        "company": "Continus Ltd",
+        "sDate": "Sept, 2022",
+        "eDate": "Sept, 2023",
+        "location": "Lagos State",
+        "exp": [
+            "Worked on ecommerce",
+            "Worked on Admin Users Page"
+        ]    
+    }
+]
