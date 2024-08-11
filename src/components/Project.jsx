@@ -10,15 +10,18 @@ const Project = () => {
             {projects.map((data) => {
                 return (
                     <>
-                    <div className='col-md-6'>
+                    <div className='col-md-6 col-sm-6 col-12'>
                     <div className='row d-flex justify-content-center'>
                         <div className='col-md-5'>
-                        <img src={data.imgSrc} alt='' className='img-fluid' />                        
+                        <img data-aos="flip-left"
+          data-aos-duration="2500" src={data.imgSrc} alt='' className='img-fluid' />                        
                         
                         </div>
-                        <div className='col-md-5'>
-                        <h6 className='text-white'>{data.projectName} </h6>
-                        <p>{data.description} </p>
+                        <div className='col-md-5 col-sm-6 col-12'>
+                        <h6 data-aos="zoom-in"
+          data-aos-duration="2500" className='text-white'>{data.projectName} </h6>
+                        <p data-aos="fade-left"
+          data-aos-duration="2500">{data.description} </p>
                         </div>
                     </div>
                     

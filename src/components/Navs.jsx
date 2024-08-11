@@ -8,7 +8,8 @@ const Navs = () => {
   return (
     <Navbar expand="lg" className="navbars">
       <Container>
-        <Navbar.Brand className="navbars_brand">
+        <Navbar.Brand data-aos="zoom-in"
+                data-aos-duration="2500" className="navbars_brand">
             Dm Tech</Navbar.Brand>
         <Row className=" d-flex flex-row justify-content-end">
           <Col>

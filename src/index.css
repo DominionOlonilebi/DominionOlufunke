@@ -9,8 +9,8 @@
 
 .navbars .navbars_brand{
   color: #fff;
-  padding-top: 3%;
-  font-size: 22px;
+  padding-top: 12px;
+  font-size: 17px;
   font-weight: 700;
 }
 
@@ -19,8 +19,8 @@
 }
 .navs .linkss {
   color: #fff;
-  padding-top: 3%;
-  font-size: 18px;
+  padding-top: 12px;
+  font-size: 13px;
 }
 .navs .linkss:hover{
   color: #e7008a;
@@ -59,7 +59,7 @@ border-bottom-right-radius: 20px;
   font-size: 14px;
 }
 
-.intro .mySwiper {
+.intro .skills {
   padding-top: 20px;
   padding-bottom: 40px;
   color: #ffffff;
@@ -188,4 +188,15 @@ margin-top: 25px;
 .footer-section p{
   color: #fff;
   font-size: 13px;
+}
+
+@media (max-width: 578px) {
+  .abt .abt-card {
+    background-color: black;
+    border: 2px solid #272727;
+  color: #c0c0c0;
+  margin-top: -50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  }
 }

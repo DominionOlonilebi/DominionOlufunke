@@ -6,13 +6,17 @@ const About = () => {
       <div className="container abt">
         <div className="row justify-content-center">
           <h5 className="text-center ">About Me</h5>
-          <div className="col-md-5">
-            <div className="card bg-black brand-name">
-              <h4>Dm Tech</h4>
-              <p>Web Designer & Developer</p>
+          <div data-aos="fade-right"
+                data-aos-duration="2500" className="col-md-5 col-sm-6 col-12 abt-brand">
+            <div  className="card bg-black brand-name">
+              <h4 data-aos="zoom-in"
+                data-aos-duration="2500">Dm Tech</h4>
+              <p data-aos="zoom-in"
+                data-aos-duration="2500">Web Designer & Developer</p>
             </div>
           </div>
-          <div className="col-md-4">
+          <div data-aos="fade-left"
+          data-aos-duration="2500" className="col-md-4 col-sm-6 col-12">
             <div className="card abt-card">
               <p className="px-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.

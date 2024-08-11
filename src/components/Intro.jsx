@@ -38,8 +38,10 @@ const Intro = () => {
       <div className="container">
         <div className="row ">
           <div className="col">
-            <img src="Image/domi.jpg" alt="" className="img-fluid imgs" />
-            <h3 className="mt-1">Dominion Olufunke Olonilebi</h3>
+            <img data-aos="zoom-in"
+                data-aos-duration="2500" src="Image/domi.jpg" alt="" className="img-fluid imgs" />
+            <h3 data-aos="fade-left"
+                data-aos-duration="2500" className="mt-1">Dominion Olufunke Olonilebi</h3>
             <h5 className="text-white" ref={typedRef}></h5>
             <div>
               <button
@@ -70,32 +72,23 @@ const Intro = () => {
         ></path>
       </svg>
 
-      <Swiper
-        spaceBetween={100}
-        slidesPerView={7}
-        centeredSlides={true}
-        autoplay={{
-          delay: 1300,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Html</SwiperSlide>
-        <SwiperSlide>Css</SwiperSlide>
-        <SwiperSlide>JavaScript</SwiperSlide>
-        <SwiperSlide>Reactjs</SwiperSlide>
-        <SwiperSlide>Nextjs</SwiperSlide>
-        <SwiperSlide>Redux</SwiperSlide>
-        <SwiperSlide>Context</SwiperSlide>
-        <SwiperSlide>Bootstrap</SwiperSlide>
-        <SwiperSlide>Tailwind</SwiperSlide>
-        <SwiperSlide>Shadcn</SwiperSlide>
-      </Swiper>
+<div className="container skills">
+  <div className="row">
+    <div className="col-12">
+      <div className="row text-white">
+    <div className="col-2 " >Reactjs</div >
+        <div className="col-2 " >Nextjs</div >
+        <div className="col-2 " >JavaScript</div >
+        <div className="col-2 " >Redux</div >
+        <div className="col-2 " >Context</div >
+        <div className="col-2 " >TypeScript</div >
+    </div>
+    </div>
+  </div>
+</div>
+        
+        
+      
     </section>
   );
 };
