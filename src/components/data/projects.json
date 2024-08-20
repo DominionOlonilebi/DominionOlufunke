@@ -1,51 +1,68 @@
 [
     {
-      "imgSrc": "Image/project11.JPG",
+      "imgSrc": "Image/gadget.JPG",
       "category": "next js and tailwind CSS",
-      "projectName": "Powertools INC",
+      "projectName": "Gadgets Store",
       "description":
-        "It was my first live project. Challenging but i had a great experience. Powertools is a company that .....",
-      "link": "https://www.powertoolsintltd.com/"
+        "Developed an ecommerce site with search and filtering features.",
+      "link": "https://hng-task-two-mocha.vercel.app/"
+    },
+    {
+      "imgSrc": "Image/kwamra.JPG",
+      "category": "next js and tailwind CSS",
+      "projectName": "Kwamra Website",
+      "description":
+        "Designed a pixel perfect responsive landing page.",
+      "link": "https://xr-app-rho.vercel.app/"
     },
     {
       "imgSrc": "Image/project8.JPG",
       "category": "react js and bootstrap",
       "projectName": "Weather App",
       "description":
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nesciunt vel necessitatibus perferendis.",
+        "Utilized weather API to build a dynamic dashboard with real time city data",
       "link": "https://weather-app-omega-jade.vercel.app/"
     },
     {
-      "imgSrc": "Image/project13.JPG",
-      "category": "Context API",
-      "projectName": "Calculator",
+      "imgSrc": "Image/project11.JPG",
+      "category": "next js and tailwind CSS",
+      "projectName": "Powertools INC",
       "description":
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nesciunt vel necessitatibus perferendis.",
-      "link": "https://calculator-app-phi-liart.vercel.app/"
+        "Built the UI using nextjs and tailwind",
+      "link": "https://www.powertoolsintltd.com/"
+    },
+    
+    {
+      "imgSrc": "Image/bookstore.JPG",
+      "category": "Context API",
+      "projectName": "Book Store",
+      "description":
+        "Designed a responsive book store using nextjs and tailwind",
+      "link": "https://tailwind-book-store.vercel.app/"
     },
     {
       "imgSrc": "Image/project12.JPG",
       "category": "react js and bootstrap",
       "projectName": "Foodi Website",
       "description":
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nesciunt vel necessitatibus perferendis.",
+        "Developed a pixel perfect responsive food ordering landing page",
       "link": "https://foodii-website.vercel.app/"
     },
     {
-      "imgSrc": "Image/project10.JPG",
+      "imgSrc": "Image/fino.JPG",
       "category": "react js and bootstrap",
-      "projectName": "Dashboard",
+      "projectName": "UKFino Website",
       "description":
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nesciunt vel necessitatibus perferendis.",
-      "link": "https://admin-dashboard-six-lilac.vercel.app/"
+        "Designed a pixel perfect responsive landing page.",
+      "link": "https://fino-group.vercel.app/"
     },
   
     {
-      "imgSrc": "Image/project9.JPG",
-      "category": "react js and bootstrap",
-      "projectName": "Shoe Store",
+      "imgSrc": "Image/project13.JPG",
+      "category": "Context API",
+      "projectName": "Calculator",
       "description":
-        "An ecommerce website that filter products, add to cart and delete from cart. Lorem ipsum, dolor sit",
-      "link": "https://shop-bite-eta.vercel.app/"
+        "Implemented a functional calculator app using context API",
+      "link": "https://calculator-app-phi-liart.vercel.app/"
     }
   ]

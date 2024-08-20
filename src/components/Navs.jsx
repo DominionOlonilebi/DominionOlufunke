@@ -8,13 +8,17 @@ const Navs = () => {
   return (
     <Navbar expand="lg" className="navbars">
       <Container>
-        <Navbar.Brand data-aos="zoom-in"
-                data-aos-duration="2500" className="navbars_brand">
-            Dm Tech</Navbar.Brand>
+        <Navbar.Brand
+          data-aos="zoom-in"
+          data-aos-duration="2500"
+          className="navbars_brand"
+        >
+          Dominion
+        </Navbar.Brand>
         <Row className=" d-flex flex-row justify-content-end">
           <Col>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Collapse id="basic-navbar-nav" >
               <Nav className="navs">
                 <Nav.Link href="/" className="linkss mx-3">
                   Home

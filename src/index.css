@@ -4,30 +4,31 @@
 * {
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: clip;
 }
-/* navbar */
 
-.navbars .navbars_brand{
+/* navbar */
+.navbars .navbars_brand {
   color: #fff;
   padding-top: 12px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
 }
-
-.navbars .navbars_brand:hover{
+.navbars .navbars_brand:hover {
   color: #e7008a;
 }
 .navs .linkss {
   color: #fff;
   padding-top: 12px;
-  font-size: 13px;
+  font-size: 16px;
 }
-.navs .linkss:hover{
+.navs .linkss:hover {
   color: #e7008a;
 }
-.navs .linkss:checked{
+.navs .linkss:checked {
   color: #e7008a;
 }
+
 /* intro */
 .intro {
   padding-top: 100px;
@@ -35,20 +36,30 @@
 }
 .intro h3 {
   color: #e7008a;
-  font-size: 33px;
+  font-size: 34px;
 }
 .intro .imgs {
-  width: 120px;
+  width: 150px;
   border-radius: 100%;
+  margin-top: 20px;
 }
-
+.intro .hire-a{
+  text-decoration: none;
+  background-color: black;
+  color: #fff;
+}
+.intro .resume-a{
+  text-decoration: none;
+  background-color:#e7008a;
+  color: black;
+}
 .intro .btn-hire {
   border-color: #e7008a;
-color: white;
-border-bottom-right-radius: 20px;
+  color: white;
+  border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   padding: 6px 24px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .intro .btn-resume {
   border-color: transparent;
@@ -56,18 +67,17 @@ border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
   padding: 6px 24px;
-  font-size: 14px;
+  font-size: 18px;
 }
-
 .intro .skills {
   padding-top: 20px;
   padding-bottom: 40px;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 /* About me */
-.abt{
+.abt {
   margin-top: 30px;
 }
 .abt h5 {
@@ -76,57 +86,56 @@ border-bottom-right-radius: 20px;
 }
 .abt .brand-name {
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   border-radius: 10px;
-  border: 5px solid #e7008a;
+  border: 2px solid #e7008a;
   animation-name: superman;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   color: #ffffff;
 }
-.abt .brand-name p{
+.abt .brand-name p {
   color: #adadad;
 }
+
 @keyframes superman {
   0% {
     border-color: #535353;
     transform: translate(0, 0px);
-    box-shadow: 4px 4px 10px 10px rgb(231, 0, 138);
+    box-shadow: 3px 3px 5px 5px rgb(231, 0, 138);
   }
   25% {
     border-color: #acacac;
-    box-shadow: 4px 4px 10px 10px #292929;
+    box-shadow: 4px 4px 5px 5px #292929;
   }
   50% {
     border-color: #292929;
-    transform: translate(0, 10px);
-    box-shadow: 4px 4px 10px 10px #e7008a;
+    transform: translate(0, 5px);
+    box-shadow: 4px 4px 5px 5px #e7008a;
   }
   75% {
     border-color: #ffffff;
-    box-shadow: 4px 4px 10px 10px #292929;
+    box-shadow: 4px 4px 5px 5px #292929;
   }
   100% {
     border-color: #575757;
-    transform: translate(0, -10px);
-    box-shadow: 4px 4px 10px 10px #e7008a;
-
+    transform: translate(0, -5px);
+    box-shadow: 4px 4px 5px 5px #e7008a;
   }
 }
 
 .abt .abt-card {
   background-color: black;
   border: 2px solid #272727;
-color: #c0c0c0;
-margin-left: -80px;
-padding-top: 30px;
-padding-bottom: 30px;
-margin-top: 25px;
+  color: #c0c0c0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 10px;
 }
-.abt .abt-card p{
-  line-height: 30px;
-  font-size: 13px;
+.abt .abt-card p {
+  line-height: 35px;
+  font-size: 17px;
 }
 
 /* Experience */
@@ -141,31 +150,29 @@ margin-top: 25px;
 }
 .exp-container .exp-card h5 {
   color: #d6d6d6;
-  font-size: 15px;
+  font-size: 20px;
 }
 .exp-container .exp-card h6 {
-  font-size: 14px;
-  color:#888787;
-
-}
-.exp-container p{
-  color: #d4d4d4;
-  font-size: 13px;
-  line-height: 15px;
-}
-.exp-container h4{
+  font-size: 18px;
   color: #888787;
-  font-size: 14px;
+}
+.exp-container p {
+  color: #d4d4d4;
+  font-size: 15px;
+  line-height: 25px;
+}
+.exp-container h4 {
+  color: #888787;
+  font-size: 15px;
   font-weight: 700;
 }
 
 /* Project */
-
-.project-container h5{
+.project-container h5 {
   color: #e7008a;
 }
-.project-container p{
-  font-size: 13px;
+.project-container p {
+  font-size: 15px;
   color: #888787;
 }
 
@@ -174,29 +181,67 @@ margin-top: 25px;
   color: #e7008a;
   margin-top: 40px;
 }
-.contact p{
+.contact p {
   line-height: 15px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 /* Footer */
-
-.footer-section h6{
-  color: #e7008a;
-  margin-top: -100px;
-}
-.footer-section p{
+.footer-section p {
+  margin-top: -50px;
   color: #fff;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 @media (max-width: 578px) {
+  .intro .imgs {
+    width: 120px;
+    border-radius: 100%;
+    margin-top: 10px;
+  }
+  .intro button {
+    margin-bottom: 70px;
+  }
+  .intro .skills {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 13px;
+  }  
   .abt .abt-card {
-    background-color: black;
-    border: 2px solid #272727;
-  color: #c0c0c0;
-  margin-top: -50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .abt .brand-name {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-radius: 10px;
+    animation-name: none;
+    margin-bottom: 20px;
+  }
+  .abt .abt-card {
+    margin-left: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .contact p {
+    line-height: 15px;
+    font-size: 15px;
+  }
+  .footer-section p {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .abt .abt-card {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin-top: 5px;
+  }
+  .footer-section p {
+    margin-top: 10px;
   }
 }

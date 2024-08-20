@@ -2,37 +2,42 @@
     {
         "id": 1,
         "role": "Frontend Development Internship",
-        "company": "HNG",
-        "sDate": "July, 2024",
+        "company": "HNG Tech",
+        "sDate": "July 2024 - ",
         "eDate": "Present,",
         "location": "Remote",
         "exp": [
-            "Worked on ecommerce",
-            "Worked on Admin Users Page"
+            "● Implemented an admin users page with CRUD operations, improving engagements by 30%",
+            "● Developed a pixel perfect fully functional ecommerce site",
+"● Consumed Timbu cloud API, implemented product search and filtering features.",
+"● Integrated payment API, improved checkout, reducing errors by 30%."
         ]    
     },
     {
         "id": 2,
         "role": "Frontend Development Internship",
         "company": "NochSolution",
-        "sDate": "Jan, 2024",
-        "eDate": "June, 2024",
-        "location": "Remote",
+        "sDate": "Jan 2024 - ",
+        "eDate": "June 2024",
+        "location": "Lagos State",
         "exp": [
-            "Worked on ecommerce",
-            "Worked on Admin Users Page"
+            "● Utilized weather API to build a dynamic dashboard with real time city data",
+            "● Developed and tested website features reducing bugs by 25% ",
+"● Collaborated with senior developers to build a lecturer rating application ",
+"● Implemented user authentication and CRUD operations "
         ]    
     },
     {
         "id": 3,
         "role": "Frontend Development Internship",
         "company": "Continus Ltd",
-        "sDate": "Sept, 2022",
-        "eDate": "Sept, 2023",
+        "sDate": "Sept 2022 - ",
+        "eDate": "Sept 2023",
         "location": "Lagos State",
         "exp": [
-            "Worked on ecommerce",
-            "Worked on Admin Users Page"
+            "● Researched trends, proposed techniques, boosting efficiency by 12% ",
+            "● Designed responsive landing pages",
+"● Optimized website load, reducing page time by 30%"
         ]    
     }
 ]

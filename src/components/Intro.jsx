@@ -1,13 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-
-// import required modules
-import { Autoplay } from "swiper/modules";
+import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import Slides from "./Slides";
 
 const Intro = () => {
   const typedRef = useRef(null);
@@ -38,10 +31,16 @@ const Intro = () => {
       <div className="container">
         <div className="row ">
           <div className="col">
-            <img data-aos="zoom-in"
-                data-aos-duration="2500" src="Image/domi.jpg" alt="" className="img-fluid imgs" />
-            <h3 data-aos="fade-left"
-                data-aos-duration="2500" className="mt-1">Dominion Olufunke Olonilebi</h3>
+            <img
+              data-aos="zoom-in"
+              data-aos-duration="2500"
+              src="Image/domi.jpg"
+              alt=""
+              className="img-fluid imgs"
+            />
+            <h3 data-aos="fade-left" data-aos-duration="2500" className="mt-1">
+              Dominion Olufunke Olonilebi
+            </h3>
             <h5 className="text-white" ref={typedRef}></h5>
             <div>
               <button
@@ -49,7 +48,7 @@ const Intro = () => {
                 data-aos="fade-down"
                 data-aos-duration="1000"
               >
-                Hire me
+                        <a href="mailto:dominionolufunke27@gmail.com" className="hire-a">Hire me</a>              
               </button>{" "}
               <span>
                 <button
@@ -57,7 +56,9 @@ const Intro = () => {
                   data-aos="fade-down"
                   data-aos-duration="2500"
                 >
+                  <a href="Image/Dominion my resume.pdf" download="" className="resume-a">
                   Resume
+                </a>      
                 </button>
               </span>
             </div>
@@ -72,23 +73,7 @@ const Intro = () => {
         ></path>
       </svg>
 
-<div className="container skills">
-  <div className="row">
-    <div className="col-12">
-      <div className="row text-white">
-    <div className="col-2 " >Reactjs</div >
-        <div className="col-2 " >Nextjs</div >
-        <div className="col-2 " >JavaScript</div >
-        <div className="col-2 " >Redux</div >
-        <div className="col-2 " >Context</div >
-        <div className="col-2 " >TypeScript</div >
-    </div>
-    </div>
-  </div>
-</div>
-        
-        
-      
+      <Slides />
     </section>
   );
 };
