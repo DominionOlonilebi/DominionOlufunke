@@ -228,6 +228,9 @@
     line-height: 15px;
     font-size: 15px;
   }
+  .contact .contact-phone{
+    margin-bottom: 70px;
+  }
   .footer-section p {
     margin-top: 30px;
     color: #fff;

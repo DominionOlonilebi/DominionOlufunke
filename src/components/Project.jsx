@@ -31,7 +31,7 @@ const Project = () => {
                       >
                         {data.projectName}{" "}
                       </h6>
-                      <p data-aos="fade-left" data-aos-duration="2500">
+                      <p data-aos="fade-left" data-aos-duration="2500" className="mb-4">
                         {data.description}{" "}
                       </p>
                     </div>

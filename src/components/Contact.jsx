@@ -18,7 +18,7 @@ const Contact = () => {
                 <MdMail className="mx-1" />
                 dominionolufunke27@gmail.com
               </p>
-              <p>
+              <p className="contact-phone">
                 <FaPhoneAlt className="mx-1" />
                 +234 705-216-9039{" "}
                 <span className="mx-3">
