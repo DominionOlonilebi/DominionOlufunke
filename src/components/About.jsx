@@ -27,7 +27,7 @@ const About = () => {
           >
             <div className="card abt-card">
               <p data-aos="zoom-in" data-aos-duration="2500" className="px-3">
-                I'm a dedicated Frontend Engineer with 2years working experience, proficient in transforming
+                I'm a dedicated Frontend Engineer with 2years experience working on several projects, proficient in transforming
                 conceptual designs into fully functional websites. with
                 expertise in Reactjs, JavaScript, Nextjs, Typescript, Redux
                 Toolkits, Context API, Bootstrap and Tailwind, i craft intuitive
