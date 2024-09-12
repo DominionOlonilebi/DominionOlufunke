@@ -29,21 +29,27 @@ class Slides extends Component {
             <h5>Typescript</h5>
           </div>
           <div key="slide4">
-            <h5>Redux</h5>
+            <h5>Node.js</h5>
           </div>
           <div key="slide5">
             <h5>JavaScript</h5>
           </div>
           <div key="slide6">
+            <h5>Express.js</h5>
+          </div>
+          <div key="slide7">
+            <h5>Redux</h5>
+          </div>
+          <div key="slide8">
             <h5>Context</h5>
           </div>
-          <div key="slide6">
+          <div key="slide9">
             <h5>Bootstrap</h5>
           </div>
-          <div key="slide6">
+          <div key="slide10">
             <h5>Tailwind</h5>
           </div>
-          <div key="slide6">
+          <div key="slide11">
             <h5>Shadcn</h5>
           </div>
         </Slider>

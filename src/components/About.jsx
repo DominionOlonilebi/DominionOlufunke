@@ -11,11 +11,11 @@ const About = () => {
             data-aos-duration="2500"
             className="col-lg-4 col-sm-5 col-12 abt-brand"
           >
-            <div className="card bg-black brand-name">
-              <h4 data-aos="zoom-in" data-aos-duration="2500">
+            <div className="card  brand-name" style={{backgroundColor: "#111111"}}>
+              <h4 data-aos="zoom-in" data-aos-duration="2500" className="bg-[#111111] text-white">
                 Dominion
               </h4>
-              <p data-aos="zoom-in" data-aos-duration="2500">
+              <p data-aos="zoom-in" data-aos-duration="2500" className="bg-[#111111]">
                 Web Designer & Developer
               </p>
             </div>
@@ -29,8 +29,8 @@ const About = () => {
               <p data-aos="zoom-in" data-aos-duration="2500" className="px-3">
                 I'm a dedicated Frontend Engineer with 2years experience working on several projects, proficient in transforming
                 conceptual designs into fully functional websites. with
-                expertise in Reactjs, JavaScript, Nextjs, Typescript, Redux
-                Toolkits, Context API, Bootstrap and Tailwind, i craft intuitive
+                expertise in Reactjs, JavaScript, Nextjs, Typescript, Node.js, Redux
+                Toolkits, Express.js, Context API, Bootstrap and Tailwind, i craft intuitive
                 user interfaces and seamless user experiences.
               </p>
             </div>
