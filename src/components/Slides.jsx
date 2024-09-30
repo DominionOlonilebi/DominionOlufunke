@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 class Slides extends Component {
   render() { 
     const settings = {
-      dots: true,
+      // dots: true,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
