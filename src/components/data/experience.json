@@ -1,6 +1,18 @@
 [
   {
     "id": 1,
+    "role": "Front - end Engineer & Instructor",
+    "company": "Kwara Tech Academy",
+    "sDate": "Sept 2024 - ",
+    "eDate": "Present,",
+    "location": "Ilorin Kwara State",
+    "exp": [
+      "● Revamped company website, increasing user engagement by 30%.",
+      "● Taught students HTML, CSS, JavaScript, and WordPress."
+    ]
+  },
+  {
+    "id": 2,
     "role": "Back - end Engineer",
     "company": "Techyjaunt",
     "sDate": "August 2024 - ",
@@ -13,21 +25,20 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "role": "Frontend Development Internship",
     "company": "HNG Tech",
     "sDate": "July 2024 - ",
     "eDate": "Present,",
     "location": "Remote",
     "exp": [
-      "● Implemented an admin users page with CRUD operations, improving engagements by 30%",
-      "● Developed a pixel perfect fully functional ecommerce site",
-      "● Consumed Timbu cloud API, implemented product search and filtering features.",
-      "● Integrated payment API, improved checkout, reducing errors by 30%."
+      "● Implemented an admin users page with CRUD operations.",
+      "● Developed a fully functional ecommerce site",
+      "● Ensured cross-browser compatibility, reducing issues by 20%"
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "role": "Frontend Development Internship",
     "company": "NochSolution",
     "sDate": "Jan 2024 - ",
@@ -35,13 +46,12 @@
     "location": "Lagos State",
     "exp": [
       "● Utilized weather API to build a dynamic dashboard with real time city data",
-      "● Developed and tested website features reducing bugs by 25% ",
       "● Collaborated with senior developers to build a lecturer rating application ",
       "● Implemented user authentication and CRUD operations "
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "role": "Frontend Development Internship",
     "company": "Continus Ltd",
     "sDate": "Sept 2022 - ",
