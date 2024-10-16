@@ -34,7 +34,7 @@ const Intro = () => {
             <img
               data-aos="zoom-in"
               data-aos-duration="2500"
-              src="Image/domi.jpg"
+              src="Image/dominion.jpg"
               alt=""
               className="img-fluid imgs"
             />
