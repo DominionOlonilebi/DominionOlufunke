@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const Navs = () => {
   return (
-    <Navbar expand="lg" className="navbars">
+    <Navbar expand="lg" className="navbars" style={{ paddingTop: "20px" }}>
       <Container>
         <Navbar.Brand
           data-aos="zoom-in"
@@ -15,10 +15,13 @@ const Navs = () => {
         >
           Dominion
         </Navbar.Brand>
-        <Row className=" d-flex flex-row justify-content-end">
+        <Row className="d-flex flex-row justify-content-end">
           <Col>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav" >
+            <Navbar.Toggle
+              aria-controls="basic-navbar-nav"
+              className="custom-toggle" // Custom class for toggle button
+            />
+            <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="navs">
                 <Nav.Link href="/" className="linkss mx-3">
                   Home

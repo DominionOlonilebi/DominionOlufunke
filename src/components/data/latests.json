@@ -1,0 +1,23 @@
+[
+    {
+      "imgSrc": "Image/p1.JPG",
+      "category": "React js and tailwind CSS",
+      "projectName": "Kwara Tech Academy",
+      "description": "Developed the company site, built the backend using nodejs, express js and mongoDB for storing student data. Used nodemailer to send user data via mail to the admin and send a thank you mail to registered user.",
+      "link": "https://kta-webapp.vercel.app/"
+    },
+    {
+      "imgSrc": "Image/p2.JPG",
+      "category": "node js and express",
+      "projectName": "SAPA Website",
+      "description": "Developed a registration and login form. Used MongoDB to stored user data(email and hashed password). This solution is aimed at solving accomodation issues.",
+      "link": "https://sapa-project.vercel.app/"
+    },
+    {
+      "imgSrc": "Image/designo.JPG",
+      "category": "next js and tailwind CSS",
+      "projectName": "Designo Website",
+      "description": "Developed a pixel perfect responsive site for a tech company showcasing the various courses they offer using nextjs, typescript and tailwind.",
+      "link": "https://designo-site-nine.vercel.app/"
+    }
+]

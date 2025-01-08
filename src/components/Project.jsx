@@ -9,35 +9,33 @@ const Project = () => {
         <div className="row">
           {projects.map((data) => {
             return (
-              <>
-                <div className="col-lg-6 col-sm-6 col-12 ">
-                  <div className="row d-flex justify-content-center">
-                    <div className="col-lg-5 col-sm-6 col-12 mb-3">
-                      <a href={data.link}>
-                        <img
-                          data-aos="flip-left"
-                          data-aos-duration="2500"
-                          src={data.imgSrc}
-                          alt=""
-                          className="img-fluid"
-                        />{" "}
-                      </a>
-                    </div>
-                    <div className="col-lg-5 col-sm-6 col-12">
-                      <h6
-                        data-aos="zoom-in"
+              <div key={data.id} className="col-lg-6 col-sm-6 col-12">
+                <div className="row d-flex justify-content-center">
+                  <div className="col-lg-5 col-sm-6 col-12 mb-3">
+                    <a href={data.link}>
+                      <img
+                        data-aos="flip-left"
                         data-aos-duration="2500"
-                        className="text-white"
-                      >
-                        {data.projectName}{" "}
-                      </h6>
-                      <p data-aos="fade-left" data-aos-duration="2500" className="mb-4">
-                        {data.description}{" "}
-                      </p>
-                    </div>
+                        src={data.imgSrc}
+                        alt={data.projectName}
+                        className="img-fluid project-image"
+                      />
+                    </a>
+                  </div>
+                  <div className="col-lg-5 col-sm-6 col-12">
+                    <h6
+                      data-aos="zoom-in"
+                      data-aos-duration="2500"
+                      className="text-white"
+                    >
+                      {data.projectName}
+                    </h6>
+                    <p data-aos="fade-left" data-aos-duration="2500" className="mb-4">
+                      {data.description}
+                    </p>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>

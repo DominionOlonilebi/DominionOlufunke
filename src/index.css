@@ -31,6 +31,74 @@
 .navs .linkss:checked {
   color: var(--pinky);
 }
+/* Custom Navbar Toggle button */
+.custom-toggle {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1050; /* Make sure it is above other content */
+}
+
+.custom-toggle .navbar-toggler-icon {
+  background: none; /* Remove the default icon background */
+  position: relative;
+  width: 30px;
+  height: 25px;
+}
+
+.custom-toggle .navbar-toggler-icon::before,
+.custom-toggle .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff; /* Customize color */
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-toggle .navbar-toggler-icon::before {
+  top: 0;
+}
+
+.custom-toggle .navbar-toggler-icon::after {
+  bottom: 0;
+}
+
+/* Middle line */
+.custom-toggle .navbar-toggler-icon span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #696969; /* Customize color */
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* When the navbar is open (hamburger transforms into cross) */
+.navbar-collapse.show .custom-toggle .navbar-toggler-icon::before {
+  transform: rotate(45deg); /* Rotate top line */
+  top: 50%;
+}
+
+.navbar-collapse.show .custom-toggle .navbar-toggler-icon::after {
+  transform: rotate(-45deg); /* Rotate bottom line */
+  bottom: 50%;
+}
+
+.navbar-collapse.show .custom-toggle .navbar-toggler-icon span {
+  opacity: 0; /* Hide middle line */
+}
+
+@media (max-width: 991px) {
+  /* Custom hamburger for small screens */
+  .navbar-toggler {
+    padding: 0;
+  }
+}
+
 
 /* intro */
 .intro {
@@ -89,8 +157,8 @@
 }
 .abt .brand-name {
   text-align: center;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   border-radius: 10px;
   border: 2px solid var(--pinky);
   animation-name: superman;
@@ -100,6 +168,7 @@
 }
 .abt .brand-name p {
   color: #adadad;
+  font-size: 30px;
 }
 
 @keyframes superman {
@@ -134,12 +203,115 @@
   color: #c0c0c0;
   padding-top: 30px;
   padding-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .abt .abt-card p {
   line-height: 35px;
   font-size: 17px;
 }
+
+/* src/components/Preloader.css */
+.preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it stays above all content */
+}
+
+.bouncing-balls {
+  display: flex;
+  gap: 10px;
+}
+
+.bouncing-ball {
+  width: 30px;
+  height: 30px;
+  background-color: #e7008a; 
+  border-radius: 50%; 
+  animation: bounce 1.2s ease-in-out infinite;
+}
+
+/* Animation for bouncing balls */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px); /* Move up */
+  }
+}
+
+/* Stagger the bouncing effect for each ball */
+.bouncing-ball:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.bouncing-ball:nth-child(2) {
+  animation-delay: 0.3s; /* Delay second ball */
+}
+
+.bouncing-ball:nth-child(3) {
+  animation-delay: 0.6s; /* Delay third ball */
+}
+
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.whatsapp-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/* For mobile and tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Adjust the positioning for both icons */
+  .whatsapp-icon {
+    left: auto; /* Keep space from the left for WhatsApp icon */
+    right: 15px; /* Remove right positioning */
+  }
+  /* WhatsApp Icon on small screens */
+  .whatsapp-icon {
+    padding: 12px;
+  }
+
+  .whatsapp-icon a {
+    font-size: 18px;
+  }
+}
+
+/* For very small mobile screens (max-width: 480px) */
+@media (max-width: 270px) {
+  .whatsapp-icon {
+    padding: 30px;
+  }
+
+  .whatsapp-icon a {
+    font-size: 16px;
+  }
+  .whatsapp-icon .text {
+    display: none;
+  }
+}
+
 
 /* Experience */
 
@@ -178,6 +350,43 @@
   font-size: 15px;
   color: #888787;
 }
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tech-badge {
+  background-color: #222;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.tech-badge img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+/* Image zoom effect on hover */
+.project-image {
+  transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+.project-image:hover {
+  transform: scale(1.25); /* Zoom the image by 5% on hover */
+}
+
+
 
 /* Contact */
 .contact h5 {
