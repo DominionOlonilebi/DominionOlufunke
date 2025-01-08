@@ -9,7 +9,7 @@ const About = () => {
           <div
   data-aos="fade-right"
   data-aos-duration="2500"
-  className="col-lg-5 col-sm-5 col-12 abt-brand"
+  className="col-lg-5 col-sm-6 col-12 abt-brand"
 >
   <div className="card brand-name" style={{ backgroundColor: "#111111" }}>
     <h3
@@ -112,7 +112,7 @@ const About = () => {
           <div
             data-aos="fade-left"
             data-aos-duration="2500"
-            className="col-lg-5 col-sm-7 col-12"
+            className="col-lg-5 col-sm-6 col-12"
           >
             <div className="card abt-card">
               <p data-aos="zoom-in" data-aos-duration="2500" className="px-3">

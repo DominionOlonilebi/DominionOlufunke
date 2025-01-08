@@ -9,7 +9,7 @@ const Latest = () => {
         <div className="row">
           {latests.map((data) => {
             return (
-              <div key={data.id} className="col-lg-4 col-sm-4 col-12 mb-4">
+              <div key={data.id} className="col-lg-4 col-sm-6 col-12 mb-4">
                 <div className="card-container">
                   <a href={data.link}>
                     <img

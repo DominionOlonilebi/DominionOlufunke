@@ -5,13 +5,13 @@ const Project = () => {
   return (
     <section id="project">
       <div className="container project-container">
-        <h5 className="text-center my-4">Projects</h5>
+        <h5 className="text-center mb-4 mt-5 pt-4">Projects</h5>
         <div className="row">
           {projects.map((data) => {
             return (
               <div key={data.id} className="col-lg-6 col-sm-6 col-12">
                 <div className="row d-flex justify-content-center">
-                  <div className="col-lg-5 col-sm-6 col-12 mb-3">
+                  <div className="col-lg-5  col-12 mb-3">
                     <a href={data.link}>
                       <img
                         data-aos="flip-left"
@@ -22,7 +22,7 @@ const Project = () => {
                       />
                     </a>
                   </div>
-                  <div className="col-lg-5 col-sm-6 col-12">
+                  <div className="col-lg-5  col-12 mb-4">
                     <h6
                       data-aos="zoom-in"
                       data-aos-duration="2500"

@@ -8,11 +8,8 @@ const Intro = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Frontend Developer",
-        "Web Designer",
+        "FullStack Developer",
         "Solution Provider",
-        "Web Developer",
-        "Content Creator",
       ],
       typeSpeed: 110,
       backSpeed: 60,
@@ -56,7 +53,7 @@ const Intro = () => {
                   data-aos="fade-down"
                   data-aos-duration="2500"
                 >
-                  <a href="Image/DominionResume.pdf" download="" className="resume-a">
+                  <a href="Image/DominionHResume.pdf" download="" className="resume-a">
                   Resume
                 </a>      
                 </button>
