@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "role": "Front - end Engineer & Instructor",
+    "role": "FullStack Engineer & Instructor",
     "company": "Kwara Tech Academy",
     "sDate": "Sept 2024 - ",
     "eDate": "Present,",
     "location": "Ilorin Kwara State",
     "exp": [
-      "● Revamped company website, increasing user engagement by 30%.",
+      "● Developed the company site, built the backend using nodejs, express js and mongoDB for storing student data. Used nodemailer to send user data via mail to the admin and send a thank you mail to registered user, increasing user engagement by 30%.",
       "● Taught students HTML, CSS, JavaScript, and WordPress."
     ]
   },
@@ -19,9 +19,9 @@
     "eDate": "Present,",
     "location": "Remote",
     "exp": [
-      "● Developed RESTFUL Api",
+      "● Developed a registration and login form. Used MongoDB to stored user data(email and hashed password). This solution is aimed at solving accomodation issues.",
       "● Implemented CRUD operation and CORS in express.js",
-      "● Explored third-party packages in node.js"
+      "● Developed RESTFUL Api, Explored third-party packages in node.js"
     ]
   },
   {
