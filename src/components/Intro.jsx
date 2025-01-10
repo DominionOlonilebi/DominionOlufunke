@@ -9,6 +9,7 @@ const Intro = () => {
     const options = {
       strings: [
         "FullStack Developer",
+        "WordPress Developer",
         "Solution Provider",
       ],
       typeSpeed: 110,

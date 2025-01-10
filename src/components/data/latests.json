@@ -3,21 +3,21 @@
       "imgSrc": "Image/p1.JPG",
       "category": "React js and tailwind CSS",
       "projectName": "Kwara Tech Academy",
-      "description": "Developed the company site, built the backend using nodejs, express js and mongoDB for storing student data. Used nodemailer to send user data via mail to the admin and send a thank you mail to registered user.",
+      "description": "Developed KwaraTech Academy website, implementing the backend using Node.js, Express.js, and MongoDB to securely store student data. Integrated Nodemailer to facilitate automated email communication, sending user data to the admin and a thank-you email to registered users.",
       "link": "https://kta-webapp.vercel.app/"
     },
     {
       "imgSrc": "Image/p2.JPG",
       "category": "node js and express",
       "projectName": "SAPA Website",
-      "description": "Developed a registration and login form. Used MongoDB to stored user data(email and hashed password). This solution is aimed at solving accomodation issues.",
+      "description": "Designed and implemented a registration and login system, utilizing MongoDB to securely store user data, including email addresses and hashed passwords. This solution is designed to address accommodation-related challenges.",
       "link": "https://sapa-project.vercel.app/"
     },
     {
-      "imgSrc": "Image/designo.JPG",
+      "imgSrc": "Image/p3.JPG",
       "category": "next js and tailwind CSS",
-      "projectName": "Designo Website",
-      "description": "Developed a pixel perfect responsive site for a tech company showcasing the various courses they offer using nextjs, typescript and tailwind.",
-      "link": "https://designo-site-nine.vercel.app/"
+      "projectName": "Bttrschools Website",
+      "description": "Developed and optimized the landing page, admissions page, and blog page for Bttrschools website using WordPress, resulting in a 40% increase in user engagement.",
+      "link": "https://bttrschools.com/"
     }
 ]

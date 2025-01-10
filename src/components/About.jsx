@@ -117,9 +117,9 @@ const About = () => {
             <div className="card abt-card">
               <p data-aos="zoom-in" data-aos-duration="2500" className="px-3">
                 I'm a Fullstack Developer with 3 years experience working on several projects, proficient in transforming
-                conceptual designs into fully functional websites. with
-                expertise in <span style={{color: '#e7008a'}}>MERN</span>. Reactjs, JavaScript, Nextjs, Express, Node.js, MongoDB, Redux
-                Toolkits, Postgres, Context API, Bootstrap and Tailwind, i craft intuitive
+                conceptual designs into fully functional sites. with
+                expertise in <span style={{color: '#e7008a'}}>MERN</span>. React, JavaScript, Nextjs, Express, Node.js, MongoDB, Redux
+                Toolkits, Postgres, Context, WordPress, Bootstrap, Tailwind i craft intuitive
                 user interfaces and seamless user experiences.
               </p>
             </div>
