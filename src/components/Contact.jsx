@@ -1,56 +1,56 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Eye, EyeSlash } from 'react-bootstrap-icons';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
-import axios from 'axios';
-import { motion, AnimatePresence } from 'framer-motion';
+import axios from "axios";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Contact = () => {
-
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   const [errors, setErrors] = useState({});
-  const [error, setError] = useState('');
-  const [success, setSuccess] = useState(false);
 
   const validateField = (name, value) => {
-    let errorMsg = '';
+    let errorMsg = "";
 
     switch (name) {
-      case 'firstName':
-      case 'lastName':
+      case "firstName":
+      case "lastName":
         if (!value.trim()) {
-          errorMsg = `${name === 'firstName' ? 'First' : 'Last'} Name is required.`;
+          errorMsg = `${
+            name === "firstName" ? "First" : "Last"
+          } Name is required. `;
         }
         break;
 
-      case 'email':
+      case "email":
         if (!value.trim()) {
-          errorMsg = 'Email is required.';
+          errorMsg = "Email is required.";
         } else {
           const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           if (!emailRegex.test(value)) {
-            errorMsg = 'Please enter a valid email address.';
+            errorMsg = "Please enter a valid email address.";
           }
         }
         break;
 
-      case 'phone':
+      case "phone":
         if (value && !/^\+?\d{7,15}$/.test(value)) {
-          errorMsg = 'Enter a valid phone number (7-15 digits).';
+          errorMsg = "Enter a valid phone number (7-15 digits).";
         }
         break;
 
-      case 'message':
+      case "message":
         if (!value.trim()) {
-          errorMsg = 'Message is required.';
+          errorMsg = "Message is required.";
         }
         break;
 
@@ -90,50 +90,73 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError('');
-    setSuccess(false);
 
     const isValid = validateForm();
     if (!isValid) {
-      setError('Please fill the form correctly. All field is required');
+      toast.error("Please fill the form correctly. All fields are required.");
       return;
     }
 
+    setLoading(true); // Show spinner
+
     try {
-      const res = await axios.post('https://dm-tech-bk.onrender.com/api/send-email', formData);
+      const res = await axios.post(
+        "https://dm-tech-bk.onrender.com/api/send-email",
+        formData
+      );
       if (res.data.success) {
-        setSuccess(true);
+        toast.success("Form submitted successfully!");
         setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          message: '',
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
         });
         setErrors({});
       } else {
-        setError('Something went wrong. Please try again.');
+        toast.error("Something went wrong. Please try again.");
       }
     } catch (err) {
       console.error(err);
-      setError('An error occurred while sending your message.');
+      toast.error("An error occurred while sending your message.");
+    } finally {
+      setLoading(false); // Hide spinner
     }
   };
 
   return (
     <>
-      <section id="contact" className='mt-5'>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        style={{
+          fontSize: "16px",
+          fontWeight: "bold",
+          borderRadius: "8px",
+          boxShadow: "0px 5px 15px rgba(63, 63, 63, 0.2)",
+        }}
+      />
+      <section id="contact" className="mt-5">
         <div className="container contact text-center">
           <div className="row">
             <div className="col">
-              <h5 className="mb-3" style={{ fontSize: "27px" }}>Contact Me</h5>
-              <div
-                data-aos="zoom-in"
-                data-aos-duration="2500"
-                className="text-white"
-              >
+              <h5 className="mb-3" style={{ fontSize: "27px" }}>
+                Contact Me
+              </h5>
+              <div className="text-white">
                 <p>
                   <MdMail className="mx-1" />
                   dominionolufunke27@gmail.com
@@ -152,160 +175,239 @@ const Contact = () => {
         </div>
       </section>
 
-      <div className="container mt-5">
+      <div className="container mt-5 bg-transparent">
         <div className="mx-auto col-md-8 col-lg-6">
           <h2 className="text-center mb-3 text-white">Send a message</h2>
-          <hr className="w-25 mx-auto border-3" style={{ borderColor: "#ff0b9d", backgroundColor: "transparent" }} />
+          <hr
+            className="w-25 mx-auto border-3"
+            style={{ color: "#e7008a" }}
+          />
 
-          <form onSubmit={handleSubmit} className="mt-4 position-relative">
-            {error && <div className="alert alert-danger">{error}</div>}
-            {success && (
-              <div className="alert alert-success">
-                Form submitted successfully!
+          <form
+            onSubmit={handleSubmit}
+            className="card card-body"
+            style={{ background: "#111111" }}
+          >
+            <div className="row">
+              <div className="col px-1 mb-3">
+                <label
+                  for="input1"
+                  className="ms-2 position-absolute"
+                  style={{
+                    marginTop: "-0.75rem !important",
+                    background: "#111111",
+                  }}
+                >
+                  <span
+                    className=" small  px-1"
+                    style={{ background: "#111111", color: "#e7008a" }}
+                  >
+                    First Name
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  className={`form-control mt-2  text-white ${
+                    errors.firstName ? "is-invalid" : ""
+                  }`}
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  placeholder=" "
+                  id="input1"
+                  style={{
+                    fontSize: "13px",
+                    padding: "12px",
+                    background: "#111111",
+                  }}
+                />
+                {errors.firstName && (
+                  <div className="invalid-feedback">{errors.firstName}</div>
+                )}
               </div>
-            )}
 
-            {/* First & Last Name */}
-            <div className="row mb-3">
-              <div className="col position-relative">
-                <div className="form-floating">
-                  <input
-                    type="text"
-                    className={`form-control text-white bg-transparent ${errors.firstName ? 'is-invalid' : ''}`}
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    placeholder="First Name"
-                  />
-                  <label className="text-pink" style={{ color: "#e7008a", backgroundColor: "transparent" }}>First Name</label>
-                  <AnimatePresence>
-                    {errors.firstName && (
-                      <motion.div
-                        className="invalid-feedback d-block"
-                        initial={{ opacity: 0, y: -5 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -5 }}
-                      >
-                        {errors.firstName}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </div>
-
-              <div className="col position-relative">
-                <div className="form-floating">
-                  <input
-                    type="text"
-                    className={`form-control text-white bg-transparent ${errors.lastName ? 'is-invalid' : ''}`}
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    placeholder="Last Name"
-                  />
-                  <label className="text-pink" style={{ color: "#e7008a", backgroundColor: "transparent" }}>Last Name</label>
-                  <AnimatePresence>
-                    {errors.lastName && (
-                      <motion.div
-                        className="invalid-feedback d-block"
-                        initial={{ opacity: 0, y: -5 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -5 }}
-                      >
-                        {errors.lastName}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
+              <div className="col px-1 mb-3">
+                <label
+                  for="input2"
+                  className="ms-2 position-absolute"
+                  style={{
+                    marginTop: "-0.75rem !important",
+                    background: "#111111",
+                  }}
+                >
+                  <span
+                    className=" small  px-1"
+                    style={{ background: "#111111", color: "#e7008a" }}
+                  >
+                    Last Name
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  className={`form-control mt-2  text-white ${
+                    errors.lastName ? "is-invalid" : ""
+                  }`}
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  placeholder=" "
+                  id="input2"
+                  style={{
+                    fontSize: "13px",
+                    padding: "12px",
+                    background: "#111111",
+                  }}
+                />
+                {errors.lastName && (
+                  <div className="invalid-feedback">{errors.lastName}</div>
+                )}
               </div>
             </div>
 
-            {/* Email */}
-            <div className="form-floating mb-3 position-relative">
-              <input
-                type="email"
-                className={`form-control text-white bg-transparent ${errors.email ? 'is-invalid' : ''}`}
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Email Address"
-              />
-              <label className="text-pink" style={{ color: "#e7008a", backgroundColor: "transparent" }}>Email Address</label>
-              <AnimatePresence>
+            <div className="row">
+              <div className="col px-1 mb-3">
+                <label
+                  for="input3"
+                  className="ms-2 position-absolute"
+                  style={{
+                    marginTop: "-0.75rem !important",
+                    background: "#111111",
+                  }}
+                >
+                  <span
+                    className=" small  px-1"
+                    style={{ background: "#111111", color: "#e7008a" }}
+                  >
+                    Email Address
+                  </span>
+                </label>
+                <input
+                  type="email"
+                  className={`form-control mt-2  text-white ${
+                    errors.email ? "is-invalid" : ""
+                  }`}
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder=" "
+                  id="input3"
+                  style={{
+                    fontSize: "13px",
+                    padding: "12px",
+                    background: "#111111",
+                  }}
+                />
                 {errors.email && (
-                  <motion.div
-                    className="invalid-feedback d-block"
-                    initial={{ opacity: 0, y: -5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -5 }}
-                  >
-                    {errors.email}
-                  </motion.div>
+                  <div className="invalid-feedback">{errors.email}</div>
                 )}
-              </AnimatePresence>
+              </div>
             </div>
 
-            {/* Phone */}
-            <div className="form-floating mb-3 position-relative">
-              <input
-                type="tel"
-                className={`form-control text-white bg-transparent ${errors.phone ? 'is-invalid' : ''}`}
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Phone Number"
-              />
-              <label className="text-pink" style={{ color: "#e7008a", backgroundColor: "transparent" }}>Phone Number</label>
-              <AnimatePresence>
+            <div className="row">
+              <div className="col px-1 mb-3">
+                <label
+                  for="input4"
+                  className="ms-2 position-absolute"
+                  style={{
+                    marginTop: "-0.75rem !important",
+                    background: "#111111",
+                  }}
+                >
+                  <span
+                    className=" small  px-1"
+                    style={{ background: "#111111", color: "#e7008a" }}
+                  >
+                    Phone Number
+                  </span>
+                </label>
+                <input
+                  type="tel"
+                  className={`form-control mt-2  text-white 
+                    ${errors.phone ? "is-invalid" : ""}`}
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder=" "
+                  id="input4"
+                  style={{
+                    fontSize: "13px",
+                    padding: "12px",
+                    background: "#111111",
+                  }}
+                />
                 {errors.phone && (
-                  <motion.div
-                    className="invalid-feedback d-block"
-                    initial={{ opacity: 0, y: -5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -5 }}
-                  >
-                    {errors.phone}
-                  </motion.div>
+                  <div className="invalid-feedback">{errors.phone}</div>
                 )}
-              </AnimatePresence>
+              </div>
             </div>
 
-            {/* Message */}
-            <div className="form-floating mb-3 position-relative">
-              <textarea
-                className={`form-control text-white bg-transparent ${errors.message ? 'is-invalid' : ''}`}
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Your Message"
-                style={{ height: '150px' }}
-              />
-              <label className="text-pink" style={{ color: "#e7008a", backgroundColor: "transparent" }}>Your Message</label>
-              <AnimatePresence>
+            <div className="row">
+              <div className="col px-1 mb-2">
+                <label
+                  for="input5"
+                  className="ms-2 position-absolute"
+                  style={{
+                    marginTop: "-0.75rem !important",
+                    background: "#111111",
+                  }}
+                >
+                  <span
+                    className=" small  px-1"
+                    style={{ background: "#111111", color: "#e7008a" }}
+                  >
+                    Your Message
+                  </span>
+                </label>
+                <textarea
+                  type="text"
+                  className={`form-control mt-2  text-white ${
+                    errors.message ? "is-invalid" : ""
+                  }`}
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder=" "
+                  id="input5"
+                  style={{
+                    fontSize: "13px",
+                    padding: "12px",
+                    background: "#111111",
+                    height: "150px",
+                  }}
+                ></textarea>
                 {errors.message && (
-                  <motion.div
-                    className="invalid-feedback d-block"
-                    initial={{ opacity: 0, y: -5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -5 }}
-                  >
-                    {errors.message}
-                  </motion.div>
+                  <div className="invalid-feedback">{errors.message}</div>
                 )}
-              </AnimatePresence>
-            </div>
 
-            <button
-              type="submit"
-              className="btn btn-pink py-3 w-100"
-              style={{
-                backgroundColor: "#e7008a",
-                color: "white",
-                border: "none"
-              }}
-            >
-              Send Message
-            </button>
+                <div className="mt-4">
+                  <button
+                    type="submit"
+                    className="btn btn-pink w-100  py-3"
+                    disabled={loading}
+                    style={{
+                      backgroundColor: "#e7008a",
+                      color: "white",
+                      border: "none",
+                    }}
+                  >
+                    {loading ? (
+                      <div
+                        className="spinner-border spinner-border-sm text-light"
+                        role="status"
+                        style={{
+                          backgroundColor: "#e7008a",
+                          color: "white",
+                        }}
+                      >
+                        <span className="visually-hidden">Submitting...</span>
+                      </div>
+                    ) : (
+                      "Submit"
+                    )}
+                  </button>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>

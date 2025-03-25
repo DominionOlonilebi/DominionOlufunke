@@ -25,8 +25,8 @@ const Intro = () => {
   }, []);
 
   return (
-    <section fluid className="intro ">
-      <div className="container">
+    <section fluid className="intro">
+      <div className="container ">
         <div className="row ">
           <div className="col">
             <img

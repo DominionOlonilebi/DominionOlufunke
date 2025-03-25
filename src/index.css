@@ -114,15 +114,15 @@
     padding: 10px;
     background-color: var(--navy);
   }
-
 }
+
 .navbar .linkss {
   margin-top: 15px;
 }
 
 /* intro */
 .intro {
-  padding-top: 100px;
+  padding-top: 150px;
   text-align: center;
 }
 .intro h3 {
@@ -407,6 +407,9 @@
 
 
 /* Contact */
+.contact {
+  background-color: transparent;
+}
 .contact h5 {
   color: var(--pinky);
   margin-top: 40px;
@@ -416,7 +419,7 @@
   font-size: 16px;
 }
 
-.form-floating > .form-control:not(:placeholder-shown) ~ label,
+/* .form-floating > .form-control:not(:placeholder-shown) ~ label,
 .form-floating > .form-control:focus ~ label {
   opacity: 1;
   transform: scale(0.85) translateY(-0.8rem) translateX(0.15rem);
@@ -426,14 +429,26 @@
   opacity: 1;
   transform: scale(0.85) translateY(-0.8rem) translateX(0.15rem);
   transition: all 0.2s ease-out;
+  background-color: transparent;
+} */
+
+.card > span > .form-control:focus ~ label {
+  transform: scale(0.85) translateY(-0.8rem) translateX(0.15rem);
+  transition: all 0.2s ease-out;
 }
-
-
+ 
 /* Footer */
-.footer-section p {
-  margin-top: -50px;
+.footer-section .footer-text {
   color: var(--main);
   font-size: 16px;
+}
+.footer-section p {
+  font-size: 15px;
+  color: #9e9d9d;
+  line-height: 30px;
+}
+.footer-section a {
+  color: var(--pinky);
 }
 
 @media (max-width: 578px) {
@@ -474,7 +489,7 @@
   .contact .contact-phone{
     margin-bottom: 70px;
   }
-  .footer-section p {
+  .footer-section .footer-text{
     margin-top: 30px;
     color: var(--main);
     font-size: 16px;
@@ -487,7 +502,7 @@
     padding-bottom: 3px;
     margin-top: 5px;
   }
-  .footer-section p {
+  .footer-section .footer-text {
     margin-top: 10px;
   }
 }

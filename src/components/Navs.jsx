@@ -9,7 +9,7 @@ function Navs() {
   };
 
   return (
-    <nav className="navbar container pt-4">
+    <nav className="navbar container pt-4 fixed-top">
       <div className="navbar-logo">
         <a href="#home" className="logo">
           <h4 className="text-white">Dm Tech</h4>
