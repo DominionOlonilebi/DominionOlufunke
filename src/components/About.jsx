@@ -5,7 +5,7 @@ const About = () => {
     <section id="about">
       <div className="container abt">
         <div className="row justify-content-center">
-          <h5 className="text-center mt-5">About Me</h5>
+          <h5 className="text-center mt-5" style={{fontSize: "27px"}}>About Me</h5>
           <div
   data-aos="fade-right"
   data-aos-duration="2500"

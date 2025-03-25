@@ -1,23 +1,37 @@
 [
     {
-      "imgSrc": "Image/p1.JPG",
+      "imgSrc": "Image/proj4.JPG",
       "category": "React js and tailwind CSS",
       "projectName": "Kwara Tech Academy",
-      "description": "Developed KwaraTech Academy website, implementing the backend using Node.js, Express.js, and MongoDB to securely store student data. Integrated Nodemailer to facilitate automated email communication, sending user data to the admin and a thank-you email to registered users.",
+      "description": "Developed KwaraTech Academy website with a secure registration system using Node.js, Express.js, and MongoDB. Integrated email notifications via Nodemailer, boosting user engagement by 30%. Implemented referral codes, a dynamic certification page with search functionality, and role-based authorization for managing student certification records.",
       "link": "https://kta-webapp.vercel.app/"
+    },
+    {
+      "imgSrc": "Image/proj3.JPG",
+      "category": "node js and express",
+      "projectName": "Tech2grassroots Website",
+      "description": "Developed Tech2Grassroots website, a dynamic web app for an NGO. Implemented secure contact and volunteer registration with Node.js, Express, and MongoDB. Delivered a seamless user experience through responsive design and optimized performance, while ensuring data privacy and security with backend best practices.",
+      "link": "https://tech2grassroots.africa/"
+    },
+    {
+      "imgSrc": "Image/proj5.JPG",
+      "category": "node js and express",
+      "projectName": "MyVault vest limited",
+      "description": "Developed and implemented a responsive, user-friendly frontend for the company’s website using modern web technologies. Built a high-performing landing page optimized for engagement and conversions, ensuring seamless functionality and cross-browser compatibility across all devices.",
+      "link": "https://www.myvault.ng/"
     },
     {
       "imgSrc": "Image/p2.JPG",
       "category": "node js and express",
       "projectName": "SAPA Website",
-      "description": "Designed and implemented a registration and login system, utilizing MongoDB to securely store user data, including email addresses and hashed passwords. This solution is designed to address accommodation-related challenges.",
+      "description": "Developed and implemented a secure user registration and authentication system utilizing Node.js, Express, and MongoDB. Ensured efficient management of user data through password hashing, enhancing data security and streamlining access to accommodation services.",
       "link": "https://sapa-project.vercel.app/"
     },
     {
       "imgSrc": "Image/p3.JPG",
       "category": "next js and tailwind CSS",
       "projectName": "Bttrschools Website",
-      "description": "Developed and optimized the landing page, admissions page, and blog page for Bttrschools website using WordPress, resulting in a 40% increase in user engagement.",
+      "description": "Developed and optimized the landing page, admissions page, and blog page for the Bttrschools website using WordPress. Enhanced user experience and improved site performance, resulting in a 40% increase in user engagement and contributing to the overall growth of the platform’s online presence.",
       "link": "https://bttrschools.com/"
     }
 ]

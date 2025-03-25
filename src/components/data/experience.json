@@ -1,67 +1,80 @@
 [
   {
     "id": 1,
+    "role": "Frontend Development",
+    "company": "MyVault Vest Limited",
+    "sDate": "Feb 2025 - ",
+    "eDate": "Present,",
+    "location": "Remote",
+    "exp": [
+      "● Developed the frontend of the company’s website, delivering a responsive, intuitive, and visually appealing user interface. Utilized modern web technologies and frameworks to ensure optimal performance, cross-browser compatibility, and a seamless experience across all devices.", 
+      "● Built a high-converting landing page optimized for user engagement, employing responsive design principles to guarantee consistent functionality and user experience on both desktop and mobile platforms."
+    ]
+  },
+  {
+    "id": 2,
     "role": "FullStack Engineer & Instructor",
     "company": "Kwara Tech Academy",
     "sDate": "Sept 2024 - ",
     "eDate": "Present,",
     "location": "Ilorin Kwara State",
     "exp": [
-      "● Developed the company site, built the backend using nodejs, express js and mongoDB for storing student data. Used nodemailer to send user data via mail to the admin and send a thank you mail to registered user, increasing user engagement by 30%.",
-      "● Built websites using WordPress.",
-      "● Taught students HTML, CSS, JavaScript, and WordPress."
+      "● Developed the company website and a secure registration form using Node.js, Express.js, and MongoDB, integrating automated email notifications with Nodemailer and a referral system via the Crypto module. Increasing user engagement by 30%.",
+        "● Built a certification page with dynamic data fetching from the backend. Developed a search feature and implemented role-based authorization, allowing only admins to add or delete student certification records.",
+      "●  Developed websites using WordPress, ensuring responsive design and user-friendly interfaces.",
+      "● Conducted training sessions on HTML, CSS, JavaScript, and WordPress, enhancing their web development skills."
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "role": "Back - end Engineer",
     "company": "Techyjaunt",
     "sDate": "August 2024 - ",
     "eDate": "December 2024,",
     "location": "Remote",
     "exp": [
-      "● Developed a registration and login form. Used MongoDB to stored user data(email and hashed password). This solution is aimed at solving accomodation issues.",
-      "● Implemented CRUD operation and CORS in express.js",
-      "● Developed RESTFUL Api, Explored third-party packages in node.js"
+      "● Developed a secure user registration and login system using Node.js, Express.js, and MongoDB, efficiently managing user data with email and hashed password storage to address accommodation-related challenges.",
+      "● Implemented comprehensive CRUD operations and configured CORS in Express.js to ensure secure and seamless API interactions.",
+      "● Built RESTful APIs and integrated third-party Node.js packages to enhance functionality and optimize application performance."
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "role": "Frontend Development Internship",
     "company": "HNG Tech",
     "sDate": "July 2024 - ",
     "eDate": "August 2024,",
     "location": "Remote",
     "exp": [
-      "● Implemented an admin users page with CRUD operations.",
-      "● Developed a fully functional ecommerce site",
-      "● Ensured cross-browser compatibility, reducing issues by 20%"
+      "● Implemented an Admin Users Management page with full CRUD (Create, Read, Update, Delete) functionality, enabling efficient user administration and role management.",
+      "● Developed a fully functional eCommerce website, delivering a seamless shopping experience with secure authentication, product management, and payment integration.",
+      "● Ensured cross-browser compatibility and responsiveness across devices, reducing interface and functionality issues by 20%."
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "role": "Frontend Development Internship",
     "company": "NochSolution",
     "sDate": "Jan 2024 - ",
     "eDate": "June 2024",
     "location": "Lagos State",
     "exp": [
-      "● Utilized weather API to build a dynamic dashboard with real time city data",
-      "● Collaborated with senior developers to build a lecturer rating application ",
-      "● Implemented user authentication and CRUD operations "
+      "● Developed a dynamic weather dashboard by integrating real-time city data using a Weather API, enhancing user interaction and engagement",
+      "● Collaborated with senior developers to design and build a Lecturer Rating Application, contributing to improved user feedback and application functionality.",
+      "● Implemented secure user authentication and full CRUD (Create, Read, Update, Delete) operations, ensuring efficient data management and user access control. "
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "role": "Frontend Development Internship",
     "company": "Continus Ltd",
     "sDate": "Sept 2022 - ",
     "eDate": "Sept 2023",
     "location": "Lagos State",
     "exp": [
-      "● Researched trends, proposed techniques, boosting efficiency by 12% ",
-      "● Designed responsive landing pages",
-      "● Optimized website load, reducing page time by 30%"
+      "● Conducted research on industry trends and proposed innovative techniques, resulting in a 12% improvement in operational efficiency. ",
+      "● Designed and developed responsive landing pages, ensuring seamless user experiences across all devices",
+      "● Optimized website performance by reducing page load times by 30%, enhancing user engagement and retention."
     ]
   }
 ]

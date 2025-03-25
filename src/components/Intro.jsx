@@ -54,7 +54,7 @@ const Intro = () => {
                   data-aos="fade-down"
                   data-aos-duration="2500"
                 >
-                  <a href="Image/DominionHResume.pdf" download="" className="resume-a">
+                  <a href="Image/DominionAHResume.pdf" download="" className="resume-a">
                   Resume
                 </a>      
                 </button>

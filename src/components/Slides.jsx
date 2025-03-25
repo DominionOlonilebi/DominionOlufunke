@@ -20,16 +20,16 @@ class Slides extends Component {
       <div className="slider-container text-white mt-3">
         <Slider {...settings}>
           <div key="slide1">
-            <h5>Reactjs</h5>
+            <h5>React.js</h5>
           </div>
           <div key="slide2">
-            <h5>Nextjs</h5>
+            <h5>Node.js</h5>
           </div>
           <div key="slide3">
             <h5>Typescript</h5>
           </div>
           <div key="slide4">
-            <h5>Node.js</h5>
+            <h5>Next.js</h5>
           </div>
           <div key="slide5">
             <h5>JavaScript</h5>
@@ -38,19 +38,19 @@ class Slides extends Component {
             <h5>Express.js</h5>
           </div>
           <div key="slide7">
-            <h5>Redux</h5>
+            <h5>MongoDB</h5>
           </div>
           <div key="slide8">
             <h5>Context</h5>
           </div>
           <div key="slide9">
-            <h5>Bootstrap</h5>
+            <h5>Redux</h5>
           </div>
           <div key="slide10">
-            <h5>Tailwind</h5>
+            <h5>Bootstrap</h5>
           </div>
           <div key="slide11">
-            <h5>Shadcn</h5>
+            <h5>Tailwind</h5>
           </div>
         </Slider>
       </div>

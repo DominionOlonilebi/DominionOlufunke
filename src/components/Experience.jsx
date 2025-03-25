@@ -33,7 +33,7 @@ const Experience = () => {
   return (
     <section id="experience">
       <div className="container exp-container">
-        <h5 className="exp-title text-center">Experience</h5>
+        <h5 className="exp-title text-center mb-4" style={{fontSize: "27px"}}>Experience</h5>
         <Slider {...settings}>
           {experience.map((data) => {
             return (
@@ -48,12 +48,13 @@ const Experience = () => {
                   <h4 className="mb-3">
                     {data.sDate} {data.eDate} {data.location}{" "}
                   </h4>
-                  <div data-aos="zoom-in" data-aos-duration="2500">
-                    <p>{data.exp[0]} </p>
-                    <p>{data.exp[1]} </p>
-                    <p>{data.exp[2]} </p>
-                    <p>{data.exp[3]} </p>
-                    <p>{data.exp[4]} </p>
+                  <div data-aos="zoom-in" data-aos-duration="2500" className="mx-md-4 mt-3" >
+                    <p style={{fontSize: "17px"}}>{data.exp[0]} </p>
+                    <p style={{fontSize: "17px"}}>{data.exp[1]} </p>
+                    <p style={{fontSize: "17px"}}>{data.exp[2]} </p>
+                    <p style={{fontSize: "17px"}}>{data.exp[3]} </p>
+                    <p style={{fontSize: "17px"}}>{data.exp[4]} </p>
+                    <p style={{fontSize: "17px"}}>{data.exp[5]} </p>
                   </div>
                 </div>
               </div>

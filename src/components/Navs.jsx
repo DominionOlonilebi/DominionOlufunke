@@ -1,50 +1,64 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-const Navs = () => {
+function Navs() {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsCollapsed(prevState => !prevState);
+  };
+
   return (
-    <Navbar expand="lg" className="navbars" style={{ paddingTop: "20px" }}>
-      <Container>
-        <Navbar.Brand
-          data-aos="zoom-in"
-          data-aos-duration="2500"
-          className="navbars_brand"
-        >
-          Dominion
-        </Navbar.Brand>
-        <Row className="d-flex flex-row justify-content-end">
-          <Col>
-            <Navbar.Toggle
-              aria-controls="basic-navbar-nav"
-              className="custom-toggle" // Custom class for toggle button
-            />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="navs">
-                <Nav.Link href="/" className="linkss mx-3">
-                  Home
-                </Nav.Link>
-                <Nav.Link href="#about" className="linkss mx-3">
-                  About
-                </Nav.Link>
-                <Nav.Link href="#experience" className="linkss mx-3">
-                  Experience
-                </Nav.Link>
-                <Nav.Link href="#project" className="linkss mx-3">
-                  Projects
-                </Nav.Link>
-                <Nav.Link href="#contact" className="linkss mx-3">
-                  Contact
-                </Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Col>
-        </Row>
-      </Container>
-    </Navbar>
+    <nav className="navbar container pt-4">
+      <div className="navbar-logo">
+        <a href="#home" className="logo">
+          <h4 className="text-white">Dm Tech</h4>
+        </a>
+      </div>
+
+      {/* Toggle Button */}
+      <button className="navbar-toggler" onClick={toggleNavbar} style={{color: "#e7008a"}}>
+        {isCollapsed ? <FaTimes /> :  <FaBars />}
+      </button>
+
+      {/* Navbar Links */}
+      <div className={`navbar-links ${isCollapsed ? "collapsed" : ""}`}>
+        <ul>
+          <li className="">
+            <a href="/" className="linkss mx-3">
+              Home
+            </a>
+          </li>
+          <li className="">
+            <a href="#about" className="linkss mx-3">
+              About
+            </a>
+          </li>
+          <li className="">
+            <a href="#experience" className="linkss mx-3">
+            Experience
+            </a>
+          </li>
+          <li className="">
+            <a
+              href="#project"
+              className="linkss mx-3"
+            >
+              Projects
+            </a>
+          </li>
+          <li className="">
+            <a
+              href="#contact"
+              className="linkss mx-3"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
-};
+}
 
 export default Navs;
