@@ -39,13 +39,13 @@ const Footer = () => {
        <p className="text-center fs-5 mt-3">Follow Us</p>
 
           <a
-            href="/"
+            href="https://www.linkedin.com/in/dominion-olonilebi-3b7a6423b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className="social-media mx-3 fs-3"
           >
             <FaLinkedin />
           </a>
           
-          <a href="/" className="social-media mx-3 fs-3">
+          <a href="https://x.com/Ominidley?t=jVJ6qschABQa1dbnFMlf8Q&s=09" className="social-media mx-3 fs-3">
             <FaTwitter />
           </a>
           <a href="/" className="social-medias mx-3 fs-3">
