@@ -19,19 +19,19 @@ const Footer = () => {
           <div className='col-md-4'>
             <p className=' text-secondary mb-3 fs-5'>Check out my Live Projects</p>
             <div className='mb-3'>
-            <a href='/https://kta-webapp.vercel.app/' className='text-light'>Kwara Tech Academy</a>
+            <a href='https://kta-webapp.vercel.app/' className='text-light'>Kwara Tech Academy</a>
               </div>
               <div className='mb-3'>
-              <a href='/https://www.myvault.ng/' className='text-light'>MyVault vest limited</a>
+              <a href='https://www.myvault.ng/' className='text-light'>MyVault vest limited</a>
               </div>
               <div className='mb-3'>
-              <a href='/https://www.powertoolsintltd.com/' className='text-light'>Powertools INC</a>
+              <a href='https://www.powertoolsintltd.com/' className='text-light'>Powertools INC</a>
               </div>
               <div className='mb-3'>
-              <a href='/https://bttrschools.com/' className='text-light'>Bttrschools Website</a>
+              <a href='https://bttrschools.com/' className='text-light'>Bttrschools Website</a>
               </div>
               <div className='mb-3'>
-              <a href='/https://tech2grassroots.africa/' className='text-light'>Tech2grassroots Website</a>
+              <a href='https://tech2grassroots.africa/' className='text-light'>Tech2grassroots Website</a>
               </div>
           </div>
         </div>
